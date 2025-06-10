@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="viewpager_item_margin">16dp</dimen>
+    <dimen name="viewpager_side_padding">40dp</dimen>
+    <dimen name="source_logo_size">64dp</dimen>
+    <dimen name="carousel_height">200dp</dimen>
+</resources>

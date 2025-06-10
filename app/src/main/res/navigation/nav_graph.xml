@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.projek_mobile.fragments.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_home_to_search"
+            app:destination="@id/nav_search" />
+        <action
+            android:id="@+id/action_home_to_bookmark"
+            app:destination="@id/nav_bookmark" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.example.projek_mobile.fragments.SearchFragment"
+        android:label="Discover">
+        <action
+            android:id="@+id/action_search_to_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_search_to_bookmark"
+            app:destination="@id/nav_bookmark" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_bookmark"
+        android:name="com.example.projek_mobile.fragments.BookmarkFragment"
+        android:label="Saved">
+        <action
+            android:id="@+id/action_bookmark_to_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_bookmark_to_search"
+            app:destination="@id/nav_search" />
+    </fragment>
+</navigation>
