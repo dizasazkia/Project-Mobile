@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="dot_active">#000000</color>
+    <color name="dot_inactive">#D3D3D3</color>
+    <color name="dark_gray">#555555</color>
+    <color name="light_blue_50">#F0F7FF</color>
+    <color name="light_gray">#DDDDDD</color>
+    <color name="background_color">@color/white</color>
+    <color name="text_color_primary">@color/black</color>
+    <color name="text_color_secondary">@color/dark_gray</color>
+    <color name="text_color_filter">#000000</color>
 </resources>
