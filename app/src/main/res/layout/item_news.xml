@@ -1,0 +1,102 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="0dp"
+    card_view:cardBackgroundColor="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@android:color/transparent">
+
+        <!-- Gambar thumbnail -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivNews"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_image"
+            android:contentDescription="Gambar berita"
+            android:layout_gravity="center_vertical"
+            app:shapeAppearanceOverlay="@style/RoundedImageStyle" />
+
+        <!-- Konten teks -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="12dp">
+
+            <!-- Judul -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ukraine's President Zelensky to BBC: Blood money being paid..."
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <!-- Subjudul atau sumber -->
+            <TextView
+                android:id="@+id/tvSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BBC News"
+                android:textColor="#5A5A5A"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"
+                android:textStyle="bold" />
+
+            <!-- Baris waktu dan bookmark -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical">
+
+                <!-- Ikon jam -->
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@android:drawable/ic_menu_recent_history"
+                    android:contentDescription="Ikon jam"
+                    app:tint="#666666" />
+
+                <!-- Waktu -->
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14m ago"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:layout_marginStart="4dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <!-- Icon bookmark -->
+                <ImageView
+                    android:id="@+id/ivBookmark"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:src="@drawable/ic_bookmark_border"
+                    android:contentDescription="Tombol bookmark"
+                    app:tint="#007AFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
